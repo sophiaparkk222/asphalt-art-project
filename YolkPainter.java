@@ -1,101 +1,105 @@
 import org.code.neighborhood.*;
 
-
 public class YolkPainter extends PainterPlus {
-public void paintYolk(String color) {
 
-  setPaint(1000);
-  //setting enough paint for the painter 
-  move();
-  move();
-  move();
-  move();
+  /**
+   * Paints the yellow yolk inside the egg.
+   *
+   * @param color the color used to paint the yolk
+   */
+  public void paintYolk(String color) {
 
-  turnRight();
-  move();
-  move();
-  move();
-  move();
+    setPaint(1000);
 
-  //moving the painter to the right spot before painting everything yellow for yolk
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
+    move();
+    move();
+    move();
+    move();
 
-  turnLeft();
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
+    turnRight();
 
-  turnLeft();
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
+    move();
+    move();
+    move();
+    move();
 
-  turnLeft();
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
 
-  turnLeft();
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
+    turnLeft();
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
 
-  turnLeft();
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  turnLeft();
-  move();
-  paint("yellow");
-  move();
-  paint("yellow");
-  turnLeft();
-  move();
-  paint("yellow");
+    turnLeft();
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
 
-  turnLeft();
-  move();
-  paint("yellow");
+    turnLeft();
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
 
-  move();
-  move();
-  move();
-  move();
-  move();
+    turnLeft();
+    move();
+    paint(color);
+    move();
+    paint(color);
+    move();
+    paint(color);
 
-  turnRight();
-  move();
-  move();
-  move();
-  move();
-  move();
-  move();
+    turnLeft();
+    move();
+    paint(color);
+    move();
+    paint(color);
 
-  //moves the painter to the corner of grid so the picture isn't obstructed
-}
+    turnLeft();
+    move();
+    paint(color);
+    move();
+    paint(color);
+
+    turnLeft();
+    move();
+    paint(color);
+
+    // Move the painter away from the egg.
+    move();
+    move();
+    move();
+    move();
+    move();
+
+    turnRight();
+    move();
+    move();
+    move();
+    move();
+    move();
+    move();
+  }
 }
