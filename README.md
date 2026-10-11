@@ -19,7 +19,7 @@ This project was created on Code.org's JavaLab platform using the built-in Neigh
 
 ## Output:
 
-![final image of egg icon](finalImage.png)
+![final image of egg icon](mural.png)
 
 ## Reflection
 
