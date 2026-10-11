@@ -2,6 +2,11 @@ import org.code.neighborhood.*;
 
 public class BackgroundPainter extends PainterPlus {
 
+  /**
+   * Paints one complete row with the specified color.
+   *
+   * @param color the color used to paint the row
+   */
   public void paintRow(String color) {
     while (canMove()) {
       paint(color);
@@ -10,7 +15,9 @@ public class BackgroundPainter extends PainterPlus {
     paint(color);
   }
 
- // turns bp painter after each row is filled in with black paint
+  /**
+   * Turns the painter around and moves it to the next row.
+   */
   public void turnToEast() {
     if (isFacingWest()) {
       turnLeft();
@@ -23,7 +30,9 @@ public class BackgroundPainter extends PainterPlus {
     }
   }
 
-// covers the entire background with black paint 
+  /**
+   * Paints the entire background black.
+   */
   public void paintBackground() {
     setPaint(2000);
 
@@ -73,6 +82,9 @@ public class BackgroundPainter extends PainterPlus {
     turnRight();
     move();
     turnRight();
+    paintRow("black");
+
+    turnToEast();
     paintRow("black");
   }
 }
